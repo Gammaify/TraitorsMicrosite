@@ -1,0 +1,58 @@
+﻿
+
+@{
+    var CookieConsentTracking = Context.Request.Cookies["CookieConsentTracking"];
+    var CookieConsent = Context.Request.Cookies["CookieConsent"];
+
+
+}
+@model IList<GingerFoxHub.Pages.Shared.Components.CookieConsent.CookieConsentViewComponent.CookieConsentData>
+
+
+
+
+<link href="~/css/CookieConsent.css" rel="stylesheet" />
+<script src="~/js/CookieConsent.js"></script>
+
+@if (CookieConsent != "true")
+{
+    <div class="CookieTransparentBackground">
+    </div>
+    <div class="FixedCookiePopupContainer">
+        <div class="CookiePopupContainer">
+            <img class="bottomLeftCookie" src="https://media.gingerfox.co.uk/GingerFoxHub/Site/Layout/GF_HUB_COOKIE_POPUP.svg" />
+            <div class="CookieMainContainer">
+                <h4>Our Cookies</h4>
+                <p>We use cookies to enhance your experience and for analytics on our site and third party sites. We may share your information with our advertising and analytics partners. Find out more about cookies by reading our <a href="/Information/PrivacyPolicy">Privacy Policy</a>. By clicking <b>"Allow All Cookies"</b> you agree to all of the above or you can click <b>"Cookie Settings"</b> to choose what cookies you are happy for us to use.</p>
+                <button type="button" id="AcceptAllCookiesBtn" class="AcceptCookieBtn">Allow All Cookies</button>
+                <button type="button" id="CookieSettingBtn" class="cookieSettingLink">Cookie Settings</button>
+            </div>
+
+            <div class="CookieSettingsContainer">
+
+                <h4>Cookie Settings</h4>
+                <label>
+                    <input type="checkbox" id="EssentialCookies" checked="checked" disabled />
+                    Necessary Essential Cookies
+                </label>
+                <p>These are cookies that are required to make the website functional. These can not be disabled as they are essential.</p>
+                <label>
+                    <input type="checkbox" id="TrackingCookies" />
+                    Analytics/Advertising Cookies
+                </label>
+                <p>These cookies are used by our third party sites to help us with analytics. The following third party vendors we use are:</p>
+                <ul>
+                    @foreach (var cookieData in Model)
+                    {
+                        <li>@cookieData.Name</li>
+                    }
+                </ul>
+                <button type="button" class="" id="SaveTrackingSettings">Save Settings</button>
+            </div>
+            <img class="TopRightCookie" src="https://media.gingerfox.co.uk/GingerFoxHub/Site/Layout/GF_HUB_COOKIE_POPUP.svg" />
+        </div>
+
+    </div>
+}
+
+

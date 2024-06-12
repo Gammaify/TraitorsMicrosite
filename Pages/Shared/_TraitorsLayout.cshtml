@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+@{
+    string ImageServerURL = "https://media.gingerfox.co.uk/TraitorsMicroSite";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - The Traitors Card Game</title>
+    <link href="https://use.typekit.net/thr0udu.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/TraitorsLayout.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="icon" type="image/png" sizes="32x32" href="@ImageServerURL/favicon-32x32.png">
+
+    <script src="~/lib/jquery/jquery.js" asp-append-version="true"></script>
+    <script src="https://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js" asp-append-version="true"></script>
+    <script src="~/js/Shopify.js" asp-append-version="true"></script>
+    <script src="~/js/TraitorsLayout.js" asp-append-version="true"></script>
+    <script src="~/lib/js-cookie/js.cookie.js" asp-append-version="true"></script>
+</head>
+
+
+<body>
+    <wrapper class="d-flex flex-column min-vh-100">
+
+        <div class="headerContainer">
+
+            <header>
+                <div class="headerMainContainer container">
+                    <a class="Logo" href="/">
+                        <img src="@ImageServerURL/TRAITORS_LOGO.png" />
+                    </a>
+                    <ul class="Navigation">
+                        <li class="InBoxBtn">What's In The Box?</li>
+                        <li class="HowToPlayBtn">How To Play</li>
+                        <li class="DetailsBtn">Details</li>
+                        <li class="FAQsBtn">FAQs</li>
+                    </ul>
+                    <div id="BuyNowBtn" class="BuyNowBtn">Buy Now</div>
+                    @*<button id="BuyNowBtn" class="BuyNowBtn" type="button">Buy Now</button>*@
+                </div>
+            </header>
+            <div class="mobileNavContainer">
+                <ul>
+                    <li class="InBoxBtn">In The Box</li>
+                    <li class="HowToPlayBtn">How To Play</li>
+                    <li class="DetailsBtn">Details</li>
+                    <li class="FAQsBtn">FAQs</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <main role="main" id="main" class="flex-fill">
+            @RenderBody()
+        </main>
+
+        <footer>
+            <div class="footerContainer container">
+                <img class="Logo2" src="@ImageServerURL/TRAITORS_LOGO.png" />
+                @*<img class="Logo3" src="@ImageServerURL/WWTBAM_LOGO.png" />*@
+                <ul class="footerList">
+                    <li><a href="https://gingerfox.co.uk/information/contact-us">Contact Us</a></li>
+                    <li><a href="https://gingerfox.co.uk/Help/DeliveryInformation">Delivery & Returns</a></li>
+                    <li><a href="https://gingerfox.co.uk/Information/PrivacyPolicy">Privacy Policy</a></li>
+                </ul>
+                <ul class="footerList">
+                    <li><a href="https://gingerfox.co.uk/Information/TermsAndConditions">Terms & Conditions</a></li>
+                    <li><a href="https://gingerfox.co.uk/Information/EthicalEnvironmentalPolicy">Ethical & Environmental Policy</a></li>
+                    <li><a href="https://gingerfox.co.uk/Information/Sustainability">Sustainability Promise</a></li>
+                </ul>
+               @* <div class="socialContainer">
+                    <p>Follow Us</p>
+                    <div class="socialIconContainer">
+                        <a target="_blank" href="">
+                            <img src="@ImageServerURL/TRAITORS_SOCIAL_SOCIAL_TW.png" />
+                        </a>
+                        <a href="">
+                            <img src="@ImageServerURL/TRAITORS_SOCIAL_SOCIAL_FB.png" />
+                        </a>
+                        <a target="_blank" href="">
+                            <img src="@ImageServerURL/TRAITORS_SOCIAL_SOCIAL_IG.png" />
+                        </a>
+                        <a target="_blank" href="">
+                            <img src="@ImageServerURL/TRAITORS_SOCIAL_SOCIAL_YT.png" />
+                        </a>
+                        <a href="">
+                            <img src="@ImageServerURL/TRAITORS_SOCIAL_SOCIAL_TT.png" />
+                        </a>
+
+                    </div>
+                </div>*@
+            </div>
+
+        </footer>
+        <div class="licensedLogoContainer container">
+            <img class="licensedLogos desktopVersion" src="@ImageServerURL/LICENSED_LOGOS_WEB.png" />
+            <img class="licensedLogos mobileVersion" src="@ImageServerURL/LICENSED_LOGOS_MOB.png" />
+        </div>
+        <div class="copyrightContainer container">
+            <p>The Traitors &copy; idtv Film & Video Productions BV, RTL Netherlands and POSVIDEO, @DateTime.Now.Year. Licensed by All3Media International Ltd. Produced in the UK by Studio Lambert Ltd.</p>
+            <p>&copy; @DateTime.Now.Year Ginger Fox Games Ltd.</p>
+        </div>
+    </wrapper>
+    @await Component.InvokeAsync("CookieConsent", new
+    {
+    TrackingCookieNames = "Google Analytics"
+    })
+</body>
+
+</html>

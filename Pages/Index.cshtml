@@ -1,0 +1,149 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Homepage";
+    Layout = "_TraitorsLayout";
+    string ImageServerURL = "https://media.gingerfox.co.uk/TraitorsMicroSite";
+}
+<link href="~/css/index.css" rel="stylesheet" asp-append-version="true"/>
+
+<div class="bannerContainer">
+    <div class="h1BannerContainer">
+        <h1 class="bannerH1">A GAME OF TRUST AND TREACHERY...</h1>
+    </div>
+    <div class="h2BannerContainer">
+        <h2 class="bannerH2">DO YOU HAVE WHAT IT TAKES TO PLAY?</h2>
+    </div>
+    
+    <img class="desktopVersion" src="@ImageServerURL/GFHUB_TRAITORS_BANNER_WEB_1.jpg" />
+    <img class="mobileVersion" src="@ImageServerURL/GFHUB_TRAITORS_BANNER_MOB_1.jpg" />
+    <a id="BuyNowBtnBanner" class="BuyNowBtn"><div id="ProductPrice"></div>Buy Now</a>
+</div>
+
+
+@*<div class="reviewBanner">
+    <div class="starContainer">
+        <img src="@ImageServerURL/WWTBAM_STAR_WHITE.png" />
+        <img src="@ImageServerURL/WWTBAM_STAR_WHITE.png" />
+        <img src="@ImageServerURL/WWTBAM_STAR_WHITE.png" />
+        <img src="@ImageServerURL/WWTBAM_STAR_WHITE.png" />
+        <img src="@ImageServerURL/WWTBAM_STAR_WHITE.png" />
+    </div>
+    <p class="desktopVersion">(89 Reviews)</p>
+    <p class="reviewMobileText mobileVersion">RATED 5 STARS ON AMAZON FROM 89 REVIEWS</p>
+</div>*@
+<div id="InTheBox" class="InTheBoxContainer">
+   
+    <div class="InTheBoxInfoContainer container">
+         <div class="boxContentsContainer">
+            <h2>What's In The Box?</h2>
+            <p>The Traitors Card Game Box Includes:</p>
+            <ul>
+                <li>40 Gold Coin Cards,</li>
+                <li>27 Action Cards,</li>
+                <li>12 Night Cards,</li>
+                <li>6 Traitor's Dilemma Cards,</li>
+                <li>Rules Booklet.</li>
+            </ul>
+        </div>
+        <img class="desktopVersion" src="@ImageServerURL/WHATS_IN_THE_BOX_WEB.jpg" />
+        <img class="mobileVersion" src="@ImageServerURL/WHATS_IN_THE_BOX_MOB.jpg" />
+       
+
+    </div>
+</div>
+
+<div id="Details" class="detailsContainer">
+    <div class="desktopVersion">
+
+        <div class="ScaleableDetails">
+            <p><nobr>Trust no one in this darkly dramatic family game. Players work together to</nobr></p>
+            <p><nobr>collect a hoard of golden treasure, but danger is lurking. Among you are</nobr></p>
+            <p><nobr>Traitors - and every time Night falls there's a good chance someone will</nobr></p>
+            <p><nobr>attempt to commit a murder under the cover of darkness.</nobr></p>
+        </div>
+       
+    </div>
+    <div class="mobileVersion">
+        <div class="ScaleableDetails">
+            <p><nobr>Trust no one in this darkly</nobr></p>
+            <p><nobr>dramatic family game. Players</nobr></p>
+            <p><nobr>work together to collect a hoard</nobr></p>
+            <p><nobr>of golden treasure, but danger is</nobr></p>
+            <p><nobr>lurking. Among you are Traitors -</nobr></p>
+            <p><nobr>and every time Night falls there's </nobr></p>
+            <p><nobr>a good chance someone will</nobr></p>
+            <p><nobr>attempt to commit a murder</nobr></p>
+            <p><nobr>under the cover of darkness.</nobr></p>
+            
+        </div>
+    </div>
+    
+    <img class="desktopVersion" src="@ImageServerURL/GFHUB_TRAITORS_BANNER_WEB_2.jpg" />
+    <img class="mobileVersion" src="@ImageServerURL/GFHUB_TRAITORS_BANNER_MOB_2.png" />
+</div>
+
+<div id="HowToPlay" class="VideoContainer">
+    <h4>How To Play</h4>
+  
+    <div class="YTContainer">
+        <div id="player"></div>
+    </div>
+    
+</div>
+<div class="MidBanner">
+    <img class="mobileVersion" src="@ImageServerURL/GFHUB_TRAITORS_BANNER_MOB_3.jpg" />
+    <img class="desktopVersion" src="@ImageServerURL/GFHUB_TRAITORS_BANNER_WEB_3.jpg" />
+</div>
+<div class="RTBFUContainer">
+    <h4>WHY BUY FROM US</h4>
+    <div class="cardContainer">
+        <img class="desktopVersion" src="@ImageServerURL/WHY_BUY_FROM_US_WEB.png" />
+        <img class="mobileVersion" src="@ImageServerURL/WHY_BUY_FROM_US_MOB.png" />
+    </div>
+</div>
+<div id="FAQs" class="LifeStyleContainer">
+    <link href="~/lib/owlcarousel2/assets/owl.carousel.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/owlcarousel2/assets/owl.theme.default.min.css" rel="stylesheet" asp-append-version="true" />
+    <script src="~/lib/owlcarousel2/owl.carousel.min.js" asp-append-version="true"></script>
+    <div class="owl-carousel">
+        <div><img class="lifeStyleImg" src="@ImageServerURL/Lifestyle_Image_Web_1.png" /></div>
+        <div><img class="lifeStyleImg" src="@ImageServerURL/Lifestyle_Image_Web_2.png" /></div>
+        <div><img class="lifeStyleImg" src="@ImageServerURL/Lifestyle_Image_Web_3.png" /></div>
+        <div><img class="lifeStyleImg" src="@ImageServerURL/Lifestyle_Image_Web_4.png" /></div>
+    </div>
+   
+
+</div>
+
+<div class="FAQContainer">
+    <h2 class="desktopVersion">Frequently Asked Questions</h2>
+    <h2 class="mobileVersion">FAQs</h2>
+    <div class="FAQCardContainer">
+        <div id="q1Card" class="FAQCard">
+            <p id="q1" class="FAQText">Q. How Much Does Delivery Cost?</p>
+            <p id="a1" class="FAQAnswerText">Standard delivery of 2-3 working days is free. Next-day delivery is available at a small cost. Read more <a href="https://gingerfox.co.uk/Help/DeliveryInformation">here</a>.</p>
+        </div>
+        <div id="q2Card" class="FAQCard">
+            <p id="q2" class="FAQText">Q. What Is The Minimum Age For This Game?</p>
+            <p id="a2" class="FAQAnswerText">We think this is a great game for players aged 8 years and over.</p>
+        </div>
+    </div>
+    <div class="FAQCardContainer">
+        <div id="q3Card" class="FAQCard">
+            <p id="q3" class="FAQText">Q. When Will I Recieve My Item?</p>
+            <p id="a3" class="FAQAnswerText">A tracking link will be emailed to you once your order has been shipped. <a href="https://gingerfox.co.uk/information/contact-us">Contact us</a> for more info.</p>
+        </div>
+        <div id="q4Card" class="FAQCard">
+            <p id="q4" class="FAQText">Q. How Many People Can Play?</p>
+            <p id="a4" class="FAQAnswerText">This is a great game for groups of 4-6 players.</p>
+        </div>
+    </div>
+       
+    
+</div>
+
+
+<link href="~/lib/Swiper/swiper-bundle.min.css" rel="stylesheet" asp-append-version="true" />
+<script src="~/lib/Swiper/swiper-bundle.min.js" asp-append-version="true"></script>
+<script src="~/js/index.js" asp-append-version="true"></script>

@@ -1,0 +1,19 @@
+﻿.CenterContainer {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.CenterContainer p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: clamp(15px, 2vw, 20px);
+    width:100%;
+    text-align:center;
+}

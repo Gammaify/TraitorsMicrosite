@@ -1,0 +1,534 @@
+﻿.bannerH1 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.h1BannerContainer {
+    position: absolute;
+    width: 50%;
+    top: 16%;
+    left: 35%;
+    font-size: 2.5vw;
+    color: #ef8014;
+}
+
+.h2BannerContainer {
+    position: absolute;
+    width: 50%;
+    top: 23%;
+    left: 35%;
+    font-size: 2.5vw;
+    color: #ef8014;
+}
+
+.bannerH2 {
+    font-size: 100%;
+}
+
+.detailsContainer {
+    position: relative;
+    margin-top: 5%;
+    /*    margin-bottom: 5%;*/
+}
+
+    .detailsContainer p {
+        margin: 0;
+        padding: 0;
+    }
+
+nobr {
+    white-space: nowrap;
+}
+
+.ScaleableDetails {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    font-size: 2vw;
+    color: #ef8014;
+    text-align: center;
+}
+
+.detailsContainer img {
+    width: 100%;
+}
+
+@media screen and (max-width:992px) {
+    .ScaleableDetails {
+        font-size: clamp(11px, 3.5vw, 3.5vw);
+    }
+
+    .h1BannerContainer {
+        position: absolute;
+        width: 75%;
+        top: 3%;
+        left: 5%;
+        font-size: clamp(12px, 3.8vw, 4vw);
+        color: #ef8014;
+    }
+
+    .h2BannerContainer {
+        position: absolute;
+        width: 80%;
+        top: 10%;
+        left: 17%;
+        font-size: clamp(12px, 3.8vw, 4vw);
+        color: #ef8014;
+    }
+}
+
+#ProductPrice {
+    margin-right: 5%;
+}
+
+.QuestionContainer {
+    height: 60px;
+    width: 75%;
+    margin-left: -2%;
+    max-width: 350px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    color: white;
+}
+
+.Line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    top: 50%;
+    position: absolute;
+    transform: translate(0px, -50%);
+}
+
+.answer, .crossIcon, .FAQBackgroundImgGreen {
+    display: none;
+}
+
+.crossIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.ShowHideBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIcon, .crossIcon {
+    width: 20px;
+    height: 20px;
+    /*    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0px, -50%);*/
+}
+
+.answer {
+    width: 100%;
+    line-height: 1;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #e9983e !important
+}
+
+.desktopVersion {
+    display: block;
+}
+
+.mobileVersion {
+    display: none;
+}
+
+.cardContainer {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.FreeDelivery {
+    /*    position: absolute;
+    top: 5%;
+    left: 5%;
+    background: url("https://media.gingerfox.co.uk/MillionaireMicroSite/WWTBAM_RED_CARD.png");
+    width: 40%;
+    height: 20%;*/
+}
+
+.RTBFUContainer {
+    position: relative;
+    width: 100%;
+}
+
+    .RTBFUContainer h4 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+        color: #731135;
+        background-color: #f08122;
+        font-size: clamp(25px,3vw, 35px);
+    }
+
+.videoPlaceholder {
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+    display: block;
+}
+
+.MidBanner img {
+    width: 100%;
+}
+
+.MidBanner {
+    width: 100%;
+    margin-top: 20px;
+    /*    margin-bottom: 20px;*/
+}
+
+.ReviewSlider, .LifeStyleSlider {
+    width: 100%;
+}
+
+.cardContainer img {
+    width: 90%;
+    margin: auto;
+}
+
+.lifeStyleImg {
+    width: 100%;
+}
+
+#player {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.VideoContainer h4 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: clamp(25px,3vw, 35px);
+    color: #731135;
+    text-transform: uppercase;
+}
+
+.VideoContainer {
+    margin-bottom: 5%;
+}
+
+.YTContainer {
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+
+.InTheBoxContainer {
+    margin-bottom: 20px;
+}
+
+.review {
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 5%;
+    background-color: white;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+}
+
+.blueBorder {
+    border-color: #489ed4;
+}
+
+.redBorder {
+    border-color: #c22e44;
+}
+
+.greenBorder {
+    border-color: #d2e3a0;
+}
+
+.review p {
+    font-weight: bold;
+    margin: 0;
+    height: 63%;
+}
+
+.ReviewContainer {
+    background: url("https://media.gingerfox.co.uk/MillionaireMicroSite/WWTBAM_BG_DESKTOP.png");
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    background-size: 100% 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .ReviewContainer {
+        background: url("https://media.gingerfox.co.uk/MillionaireMicroSite/WWTBAM_BG_MOBILE.png");
+    }
+}
+
+@media screen and (min-width: 468px) {
+    .ReviewContainer .swiper-slide {
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .ReviewContainer .swiper-slide {
+        width: 90% !important;
+    }
+
+    .review {
+        width: unset !important;
+    }
+}
+
+.ReviewContainer h4 {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.starRatingContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .starRatingContainer img {
+        width: 20%;
+    }
+
+.bannerContainer {
+    position: relative;
+}
+
+#BuyNowBtnBanner {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+/*    width: 24%;
+    height: 9%;*/
+    font-size: clamp(15px, 2vw, 30px);
+}
+
+.bannerContainer img {
+    width: 100%;
+}
+
+.reviewBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9983e;
+    padding: 5px 0px;
+}
+
+.starContainer img {
+    width: 35px;
+    margin: 5px;
+}
+
+.reviewBanner p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.InTheBoxInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.InTheBoxContainer img {
+    width: 60%;
+    max-width: 900px;
+}
+
+.InTheBoxContainer h2 {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(25px,3vw, 29px);
+    text-transform: uppercase;
+    color: #731135;
+    margin: 20px 0px;
+}
+
+
+.boxContentsContainer p {
+    /*    font-weight: bold;*/
+    margin-bottom: 0;
+    color: #731135;
+    /*    font-size: 20px;*/
+}
+
+.boxContentsContainer ul {
+    padding-left: 0;
+}
+
+    .boxContentsContainer ul li {
+        list-style: none;
+        color: #731135;
+    }
+
+        .boxContentsContainer ul li::before {
+            content: '';
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            background-size: 14px;
+            background-image: url('https://media.gingerfox.co.uk/TraitorsMicroSite/TRAITORS_DOT.png');
+            background-repeat: no-repeat;
+            margin-right: 25px;
+            background-position: center center;
+            vertical-align: middle;
+        }
+
+.FAQContainer {
+    background-color: #f08122;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+    .FAQContainer h2 {
+        text-transform: uppercase;
+        color: #6c1134;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+.FAQCardContainer {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.FAQCard {
+    width: 48%;
+    background-color: #6a0f32;
+    border: 3px solid #4d0e29;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f08122;
+    user-select: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.FAQAnswerText a {
+    color: #f08122;
+}
+
+.FAQAnswerCard {
+    background-color: #4d0e29;
+}
+
+.FAQCard:hover {
+    cursor: pointer;
+}
+
+.FAQText {
+    padding: 0;
+    margin: 0;
+    font-size: clamp(11px, 2vw, 20px);
+}
+
+.FAQAnswerText {
+    display: none;
+    padding: 0;
+    margin: 0;
+    font-size: clamp(11px, 2vw, 18px);
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 992px) {
+
+    .FAQCard {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .YTContainer {
+        width: 90%;
+    }
+
+    .InTheBoxContainer img {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .boxContentsContainer {
+        font-size: clamp(13px, 3vw, 16px);
+    }
+
+        .boxContentsContainer ul {
+            margin: 0;
+        }
+
+    .starContainer {
+        display: none;
+    }
+
+    .reviewMobileText {
+        margin-left: 0 !important;
+        font-size: clamp(11px, 5vw, 20px) !important;
+    }
+
+    #BuyNowBtnBanner {
+        position: absolute;
+        top: 20%;
+        width: 37%;
+        font-size: clamp(7px, 3vw, 30px);
+    }
+
+    .desktopVersion {
+        display: none;
+    }
+
+    .mobileVersion {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .InTheBoxContainer img {
+        width: 80%;
+        height: unset;
+    }
+
+    .boxContentsContainer {
+        font-size: unset;
+        margin-top: 5%;
+    }
+}
